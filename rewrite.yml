@@ -1,0 +1,9 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.example.AddGuava
+displayName: Add Guava
+description: Adds the Guava Maven dependency
+recipeList:
+  - org.openrewrite.maven.AddDependency:
+      groupId: com.google.guava
+      artifactId: guava
+      version: 29.x
